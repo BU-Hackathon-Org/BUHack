@@ -423,3 +423,120 @@ body{background-color:#000;}
 }
 .telegram{color:#0088cc;font-size:24px;position:relative;width:400px;margin:0 auto}@keyframes noise-anim{0%{clip:rect(8px,9999px,71px,0)}5%{clip:rect(81px,9999px,40px,0)}10%{clip:rect(13px,9999px,53px,0)}15%{clip:rect(52px,9999px,64px,0)}20%{clip:rect(76px,9999px,97px,0)}25%{clip:rect(89px,9999px,28px,0)}30%{clip:rect(46px,9999px,1px,0)}35%{clip:rect(80px,9999px,41px,0)}40%{clip:rect(29px,9999px,91px,0)}45%{clip:rect(53px,9999px,95px,0)}50%{clip:rect(38px,9999px,13px,0)}55%{clip:rect(92px,9999px,51px,0)}60%{clip:rect(5px,9999px,66px,0)}65%{clip:rect(59px,9999px,91px,0)}70%{clip:rect(39px,9999px,84px,0)}75%{clip:rect(41px,9999px,5px,0)}80%{clip:rect(91px,9999px,55px,0)}85%{clip:rect(85px,9999px,40px,0)}90%{clip:rect(5px,9999px,47px,0)}95%{clip:rect(2px,9999px,27px,0)}100%{clip:rect(73px,9999px,74px,0)}}.telegram:after{content:attr(data-text);position:absolute;left:2px;text-shadow:-1px 0 red;top:0;color:#fff;background:#000;overflow:hidden;clip:rect(0,900px,0,0);animation:noise-anim 2s infinite linear alternate-reverse}@keyframes noise-anim-2{0%{clip:rect(24px,9999px,93px,0)}5%{clip:rect(12px,9999px,74px,0)}10%{clip:rect(17px,9999px,65px,0)}15%{clip:rect(63px,9999px,3px,0)}20%{clip:rect(24px,9999px,77px,0)}25%{clip:rect(15px,9999px,14px,0)}30%{clip:rect(40px,9999px,64px,0)}35%{clip:rect(77px,9999px,61px,0)}40%{clip:rect(79px,9999px,2px,0)}45%{clip:rect(85px,9999px,39px,0)}50%{clip:rect(72px,9999px,97px,0)}55%{clip:rect(43px,9999px,78px,0)}60%{clip:rect(38px,9999px,8px,0)}65%{clip:rect(61px,9999px,61px,0)}70%{clip:rect(98px,9999px,83px,0)}75%{clip:rect(27px,9999px,50px,0)}80%{clip:rect(99px,9999px,78px,0)}85%{clip:rect(4px,9999px,39px,0)}90%{clip:rect(61px,9999px,14px,0)}95%{clip:rect(23px,9999px,94px,0)}100%{clip:rect(99px,9999px,77px,0)}}.telegram:before{content:attr(data-text);position:absolute;left:-2px;text-shadow:1px 0 #00f;top:0;color:#fff;background:#000;overflow:hidden;clip:rect(0,900px,0,0);animation:noise-anim-2 3s infinite linear alternate-reverse}
 a.telegram:hover{color: white;}
+
+
+section
+{
+    padding: 60px 0;
+}
+
+    section .section-title
+    {
+        text-align: center;
+        color: #305893;
+        margin-bottom: 50px;
+        text-transform: uppercase;
+    }
+
+#team-sec .card
+{
+    border: none;
+    background: #ffffff;
+}
+
+
+.mainflip
+{
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside
+{
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+
+.frontside
+{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+    .frontside .card
+    {
+        min-height: 212px;
+    }
+
+        .frontside .card .card-title
+        {
+            color: #305893 !important;
+        }
+
+        .frontside .card .card-body img
+        {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+        }
+        .btn-primary:hover,
+        .btn-primary:focus
+        {
+            background-color: #108d6f;
+            border-color: #108d6f;
+            box-shadow: none;
+            outline: none;
+        }z
+    
+        .btn-primary
+        {
+            color: #fff;
+            background-color: #305891;
+            border-color: #305893;
+        }
+
+ul.list-inline{
+    height: 4vh;
+}
+ul.list-inline li{
+    height: inherit;
+    width: 3vh;
+    font-size: 2vh;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 0.5rem 0 0.5rem;
+
+}
+ul.list-inline li a{
+    display: block;
+    height: inherit;
+    width: inherit;
+}
+.card-text{
+    color:black;
+}
