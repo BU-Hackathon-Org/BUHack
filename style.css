@@ -803,3 +803,6 @@ ul.list-inline li a{
   #timeline .demo-card--step5 .head::after {
     border-color: #46b8e9;
   }
+  .btn-discord{
+    background-color: #23272A;
+  }
