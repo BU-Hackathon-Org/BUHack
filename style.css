@@ -761,12 +761,12 @@ ul.list-inline li a{
 }
 
 main {
-    min-width: 300px;
-    max-width: 600px;
+    min-width: 220px;
+    width: 30vw;
     margin: auto;
 }
   
- main p {
+ main .event-wrapper {
     font-size: 2em;
     line-height: 1.75em;
     border-top: 3px solid;
@@ -775,12 +775,12 @@ main {
     border-image-slice: 1;
     border-width: 3px;
     margin: 0;
-    padding: 40px;
+    padding: 3.5rem;
     counter-increment: section;
     position: relative;
     color: #34435E;
   }
- main p:before {
+ main .event-wrapper:before {
     content: counter(section);
     position: absolute;
     border-radius: 50%;
@@ -793,31 +793,76 @@ main {
     font-size: 1em;
   }
   
-main  p:nth-child(odd) {
+main  .event-wrapper:nth-child(even) {
     border-right: 3px solid;
     padding-left: 0;
+    text-align: right;
   }
-main  p:nth-child(odd):before {
+main  .event-wrapper:nth-child(even):before {
     left: 100%;
     margin-left: -20px;
   }
   
-main  p:nth-child(even) {
+main  .event-wrapper:nth-child(odd) {
     border-left: 3px solid;
     padding-right: 0;
   }
-main  p:nth-child(even):before {
+main  .event-wrapper:nth-child(odd):before {
     right: 100%;
     margin-right: -20px;
   }
   
-main  p:first-child {
-    border-top: 0;
+main  .event-wrapper:first-child {
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
   
-main  p:last-child {
+main  .event-wrapper:last-child {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
   }
+main .event-wrapper:nth-child(odd):after{
+    content: attr(data-time);
+position: absolute;
+top: 50%;
+left: -3rem;
+transform: translate(-100%, -50%);
+line-height: 1em;
+max-width: 20%;
+text-align: right;
+
+}
+main .event-wrapper:nth-child(even):after{
+    content: attr(data-time);
+position: absolute;
+top: 50%;
+left:auto;
+right: -3rem;
+transform: translate(100%, -50%);
+line-height: 1em;
+max-width: 20%;
+text-align: left;
+}
+.timeline-heading{
+    font-size: xx-large;
+    font-weight: 600;
+}
+.timeline-content{
+    font-size: large;
+}
+main .event-wrapper::after{
+    font-size: x-large;
+font-weight: 500;
+}
+@media screen and (max-width:420px) {
+    .timeline-heading{
+        font-size: large;
+        font-weight: 600;
+    }
+    main .event-wrapper::after{
+        font-size: medium;
+    }
+    .timeline-content{
+        font-size: medium;
+    }
+}
