@@ -1,2 +1,1 @@
-
-This project was a part of [buhack](https://buhack.tech/) 2020 ✨.
+This project is a part of [buhack](https://buhack.tech/) 2021✨.
