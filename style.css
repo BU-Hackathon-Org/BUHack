@@ -759,3 +759,65 @@ ul.list-inline li a{
     width: 4rem;
     height: 4rem;
 }
+
+main {
+    min-width: 300px;
+    max-width: 600px;
+    margin: auto;
+}
+  
+ main p {
+    font-size: 2em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    -o-border-image: linear-gradient(to right, #EF1B41 0%, #128708 100%);
+       border-image: linear-gradient(to right, #37B6FF 0%, #F3AB1B 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: #34435E;
+  }
+ main p:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    height: 1.75em;
+    width: 1.75em;
+    background-color: #34435E;
+    text-align: center;
+    line-height: 1.50em;
+    color: #ffffff;
+    font-size: 1em;
+  }
+  
+main  p:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+  }
+main  p:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+  }
+  
+main  p:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+  }
+main  p:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+  }
+  
+main  p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+main  p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
