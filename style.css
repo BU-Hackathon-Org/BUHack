@@ -777,10 +777,34 @@ ul.list-inline li a{
     font-size: 5rem;
     line-height: 5rem;
 }
+.track-image{
+    height: 80%;
+    opacity: 0.8;
+}
+@media screen and (max-width:1249px) {
+    .track-heading{
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+}
 @media screen and (max-width:600px) {
     .track-heading{
         font-size: 3rem;
         line-height: 3rem;
+    }
+    .track-image{
+        height: 70%;
+        opacity: 0.8;
+    }
+}
+@media screen and (max-width:400px) {
+    .track-heading{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .track-image{
+        height: 50%;
+        opacity: 0.8;
     }
 }
  .speaker-card .desc{
