@@ -674,10 +674,10 @@ ul.list-inline li a{
     cursor: pointer;
     color: white;
     font-size: 4rem;
-    z-index: 5;
+    z-index: 8;
 }
 .left{
-    left: 5rem !important;
+    left: 3rem !important;
 }
  .front-1 .speaker-img{
      position: relative;
@@ -755,6 +755,34 @@ ul.list-inline li a{
  .text-green{
      color: #128708;
  }
+ .bg-red{
+    background:linear-gradient( 115deg, #EF1B41,#BA0027)
+}
+.bg-yellow{
+    background:linear-gradient(155deg, #F3AB1B,#FFAE1C)
+}
+.bg-blue{
+    background:linear-gradient(155deg,  #37B6FF,#5271FF);
+}
+.bg-green{
+    background:linear-gradient(155deg, #128708,#009300) ;
+}
+.tracks-card{
+    color: white;
+    box-shadow: 1em 1em 2em rgba(78, 78, 78, 0.2);
+    border-radius: 2rem;
+    font-family: "Poppins" !important;
+}
+.track-heading{
+    font-size: 5rem;
+    line-height: 5rem;
+}
+@media screen and (max-width:600px) {
+    .track-heading{
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
  .speaker-card .desc{
      color: white;
      font-size:medium
