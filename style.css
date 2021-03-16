@@ -626,6 +626,9 @@ ul.list-inline li a{
      position: relative;
      border-radius: 2rem;
      overflow: hidden;
+     transform-style: preserve-3d;
+     transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+     color: white;
  }
  .speaker-card-side{
     position: absolute;
@@ -642,6 +645,34 @@ ul.list-inline li a{
  .card-side-front{
      background:linear-gradient( 115deg, black,#373636)
  }
+ .card-side-back{
+    background:linear-gradient( 115deg, black,#373636);
+    transform: rotateY(-180deg);
+}
+.more {
+    display: none;
+  }
+.more:checked ~ .speaker-card .card-side-front{
+    transform: rotateY(180deg);
+}
+.more:checked ~ .speaker-card .card-side-back{
+    transform: rotateY(0deg);
+}
+/* .more:checked .card-side-front {
+    transform: rotateY(180deg);
+} */
+.more-btn{
+    position: absolute;
+    bottom: 4rem;
+    right: 5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 4rem;
+    z-index: 5;
+}
+.left{
+    left: 5rem !important;
+}
  .front-1 .speaker-img{
      position: relative;
      bottom: 0;
@@ -865,4 +896,8 @@ font-weight: 500;
     .timeline-content{
         font-size: medium;
     }
+}
+.list-group-flush .list-group-item{
+    background-color: transparent;
+    font-size: medium;
 }
