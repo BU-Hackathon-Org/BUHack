@@ -627,6 +627,7 @@ ul.list-inline li a{
      border-radius: 2rem;
      overflow: hidden;
      transform-style: preserve-3d;
+     backface-visibility: hidden;
      transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
      color: white;
  }
@@ -640,7 +641,10 @@ ul.list-inline li a{
     transition: all 0.6s ease;
     box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
     border-radius: 2rem;
-
+    transform-style: preserve-3d;
+ }
+ .speaker-card-side div{
+    transform: translateZ(80px) scale(0.94);
  }
  .card-side-front{
      background:linear-gradient( 115deg, black,#373636)
@@ -648,6 +652,7 @@ ul.list-inline li a{
  .card-side-back{
     background:linear-gradient( 115deg, black,#373636);
     transform: rotateY(-180deg);
+    opacity: 0;
 }
 .more {
     display: none;
@@ -657,6 +662,7 @@ ul.list-inline li a{
 }
 .more:checked ~ .speaker-card .card-side-back{
     transform: rotateY(0deg);
+    opacity: 1;
 }
 /* .more:checked .card-side-front {
     transform: rotateY(180deg);
