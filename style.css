@@ -772,6 +772,7 @@ ul.list-inline li a{
     box-shadow: 1em 1em 2em rgba(78, 78, 78, 0.2);
     border-radius: 2rem;
     font-family: "Poppins" !important;
+    height: 15rem;
 }
 .track-heading{
     font-size: 5rem;
@@ -781,10 +782,14 @@ ul.list-inline li a{
     height: 80%;
     opacity: 0.8;
 }
-@media screen and (max-width:1249px) {
+@media screen and (max-width:1200px) {
     .track-heading{
         font-size: 4rem;
         line-height: 4rem;
+    }
+    .track-image{
+        height: 70%;
+        opacity: 0.8;
     }
 }
 @media screen and (max-width:600px) {
@@ -797,14 +802,21 @@ ul.list-inline li a{
         opacity: 0.8;
     }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     .track-heading{
-        font-size: 2rem;
-        line-height: 2rem;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
     }
     .track-image{
-        height: 50%;
+        height: 45%;
         opacity: 0.8;
+    }
+    .tracks-card{
+        color: white;
+        box-shadow: 1em 1em 2em rgba(78, 78, 78, 0.2);
+        border-radius: 2rem;
+        font-family: "Poppins" !important;
+        height: 10rem;
     }
 }
  .speaker-card .desc{
