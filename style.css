@@ -750,7 +750,7 @@ ul.list-inline li a{
     }
     .speaker-desg{
         font-size: x-small;
-        line-height: 1rem;
+        line-height: 1.5rem;
     }
 }
  .text-black{
@@ -850,7 +850,7 @@ ul.list-inline li a{
 }
 .speaker-desg{
     font-size: small;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
 .speaker-front-social{
     position: absolute;
