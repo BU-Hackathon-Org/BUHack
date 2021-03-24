@@ -802,6 +802,11 @@ ul.list-inline li a{
         opacity: 0.8;
     }
 }
+@media screen and (max-width:400px) {
+    .speak-text-small{
+        font-size: large;
+    }
+}
 @media screen and (max-width:500px) {
     .track-heading{
         font-size: 2.5rem;
