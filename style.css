@@ -740,6 +740,19 @@ ul.list-inline li a{
      font-weight: 600;
      color: black;
  }
+@media screen and (max-width:400px) {
+    .speaker-front-text{
+        vertical-align: middle;
+        text-align: center;
+        font-size: large;
+        font-weight: 600;
+        color: black;
+    }
+    .speaker-desg{
+        font-size: x-small;
+        line-height: 1rem;
+    }
+}
  .text-black{
      color: black !important;
  }
@@ -802,11 +815,6 @@ ul.list-inline li a{
         opacity: 0.8;
     }
 }
-@media screen and (max-width:400px) {
-    .speak-text-small{
-        font-size: large;
-    }
-}
 @media screen and (max-width:500px) {
     .track-heading{
         font-size: 2.5rem;
@@ -842,7 +850,7 @@ ul.list-inline li a{
 }
 .speaker-desg{
     font-size: small;
-
+    line-height: 1rem;
 }
 .speaker-front-social{
     position: absolute;
