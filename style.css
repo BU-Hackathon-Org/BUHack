@@ -441,7 +441,6 @@ section
 #team-sec .card
 {
     border: none;
-    background: #ffffff;
 }
 
 
@@ -490,6 +489,8 @@ section
     .frontside .card
     {
         min-height: 212px;
+        background: #ffffff;
+        border-radius:1.25rem ;
     }
 
         .frontside .card .card-title
