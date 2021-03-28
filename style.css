@@ -646,6 +646,7 @@ ul.list-inline li a{
  }
  .speaker-card-side div{
     transform: translateZ(80px) scale(0.94);
+    z-index: 2;
  }
  .card-side-front{
      background:linear-gradient( 115deg, black,#373636)
@@ -676,6 +677,7 @@ ul.list-inline li a{
     color: white;
     font-size: 4rem;
     z-index: 8;
+    transform: translateZ(80px) scale(0.94);
 }
 .left{
     left: 3rem !important;
@@ -689,58 +691,52 @@ ul.list-inline li a{
      filter: grayscale(100%);
      opacity: 0.8;
  }
- .front-1 .speaker-front-text{
+ .speaker-front-text{
      position: relative;
-     bottom: 9rem;
+     bottom: 12rem;
      left: 0;
-     width: 75%;
+     width: 85%;
      z-index: 3;
      height: 6rem;
      background: rgba(255, 255 ,255, 1);
- }
- .front-2 .speaker-img{
-    position: relative;
-    bottom: 0;
-    height: 400px;
-    left: -1rem;
-    z-index: 2;
-    filter: grayscale(100%);
-    opacity: 0.8;
-}
-.front-3 .speaker-img{
-    position: relative;
-    bottom: 0;
-    height: 400px;
-    left: -1rem;
-    z-index: 2;
-    filter: grayscale(100%);
-    opacity: 0.8;
-}
-.front-2 .speaker-front-text{
-    position: relative;
-    bottom: 9rem;
-    left: 0;
-    width: 75%;
-    z-index: 3;
-    height: 6rem;
-    background: rgba(255, 255 ,255, 1);
-}
-.front-3 .speaker-front-text{
-    position: relative;
-    bottom: 9rem;
-    left: 0;
-    width: 75%;
-    z-index: 3;
-    height: 6rem;
-    background: rgba(255, 255 ,255, 1);
-}
- .speaker-front-text{
      vertical-align: middle;
      text-align: center;
      font-size: x-large;
      font-weight: 600;
      color: black;
  }
+ .guest{
+    position: relative;
+    left: 0;
+    bottom: 12rem;
+    max-width:65%;
+    width: auto;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    z-index: 3;
+    height: 3rem;
+    background: rgba(255, 255 ,255, 1);
+    vertical-align: middle;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+ }
+ .more-btn{
+     z-index: 8 !important;
+ }
+ .guest p{
+     color:black !important;
+ }
+ .speaker-img{
+    position: relative;
+    bottom: 0;
+    height: 400px;
+    left: -1rem;
+    z-index: 2;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
 @media screen and (max-width:400px) {
     .speaker-front-text{
         vertical-align: middle;
@@ -769,6 +765,7 @@ ul.list-inline li a{
  .text-green{
      color: #128708;
  }
+
  .bg-red{
     background:linear-gradient( 115deg, #EF1B41,#BA0027)
 }
@@ -856,19 +853,20 @@ ul.list-inline li a{
 .speaker-front-social{
     position: absolute;
     top:0;
-    width: 75%;
     right: 0 !important;
     padding-top: 1rem;
     padding-right: 3rem;
     color: white;
     font-size: 4rem;
-    height: 6rem;
+    width: 8rem;
 }
 .speaker-front-social a {
     z-index: 4;
     width: 4rem;
     height: 4rem;
     color: white;
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 .speaker-front-social a i{
     width: 4rem;
