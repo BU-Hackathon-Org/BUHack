@@ -983,3 +983,104 @@ font-weight: 500;
     background-color: transparent;
     font-size: medium;
 }
+.prize-card{
+    background-color: #fff;    
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.prize-img{
+    height: 22.5rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.prize-img img{
+    height: 100%;
+    width: auto;
+}
+.more-prize{
+    display: none;
+}
+.prize-img-sm{
+    height: 15rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.prize-img-xs{
+    height: 10rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.prize-amt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 600;
+}
+.prize-extra{
+    height: 30rem;
+    line-height: 2.25rem;
+    transition: 0.5s;
+}
+.prize-extra-lg{
+    height: 39rem;
+    line-height: 2.25rem;
+    transition: 0.5s;
+}
+.prize-extra-sm{
+    height: 13rem;
+    line-height: 2.25rem;
+    transition: 0.5s;
+    display: flex;
+}
+.prize-extra-xs{
+    height: 10rem;
+    line-height: 2.25rem;
+    transition: 0.5s;
+}
+.prize-extra ul li{
+    padding: 1rem 0 1rem 0;
+}
+.prize-extra-sm ul li{
+    padding: 1rem 0 1rem 0;
+}
+.prize-extra-xs ul li{
+    padding: 1rem 0 1rem 0;
+}
+.more-prize-btn{
+    display: none;
+}
+@media (max-width:400px){
+    .prize-extra{
+        height: 0;
+        overflow: hidden;
+    }
+    .prize-extra-lg{
+        height: 0;
+        overflow: hidden;
+    }
+    .more-prize-btn{
+        display: block;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+    }
+    .more-prize:checked ~ .prize-extra{
+        height: auto;
+    }
+    .more-prize:checked ~ .prize-extra-lg{
+        height: auto;
+    }
+}
+.scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
