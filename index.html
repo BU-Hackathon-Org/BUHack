@@ -205,33 +205,33 @@ setInterval(updateGradient,9);</script>
     justify-content: center;
 	margin-top:1%;"><p style="font-size:30px ">📅 3<sup>rd</sup> - 4 <sup>th</sup> April 2021</p></div>
 <p>‎‎&#8195;</p>
-<div class="d-flex justify-content-center align-items-center">
-    <h2 class="display-2" style="font-weight: 600 !important;" >The <span class="text-red">H</span><span class="text-yellow">A</span><span class="text-blue">C</span><span class="text-green">K</span> is On!!</h2>
-</div>
 <div class=flexBox style="
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 	margin-top:2%;margin-bottom:5%;margin-left:-3%;">
-<!-- <div id=clockdiv>
+<div id=clockdiv>
 <div id=clockdiv1>
-<span class=days></span>
+<span class=days>00</span>
 <div class=smalltext>Days</div>
 </div>
 <div id=clockdiv2>
-<span class=hours></span>
+<span class=hours>00</span>
 <div class=smalltext>Hours</div>
 </div id="clockdiv1">
 <div id=clockdiv3>
-<span class=minutes></span>
+<span class=minutes>00</span>
 <div class=smalltext>Minutes</div>
 </div>
 <div id=clockdiv4>
-<span class=seconds></span>
+<span class=seconds>00</span>
 <div class=smalltext>Seconds</div>
 </div>
 </div>
-</div>	<p>‎‎&#8195;</p> -->
+</div>
+<div class="d-flex justify-content-center align-items-center">
+    <h2 class="display-2" style="font-weight: 600 !important;" >The <span class="text-red">H</span><span class="text-yellow">A</span><span class="text-blue">C</span><span class="text-green">K</span> is On!!</h2>
+</div><p>‎‎&#8195;</p>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script>$(document).ready(()=>{$(window).resize(()=>{var winSize=window.screen.width;if(winSize<=1024){$('.small-text').addClass('text-center');}else{$('.small-text').removeClass('text-center');}});});</script>
@@ -2796,7 +2796,7 @@ TweenMax.from(".logos",1,{delay:1.7,opacity:0,y:20,ease:Expo.easeInOut})
 TweenMax.staggerFrom(".nav ul li",1,{delay:1.7,opacity:0,y:20,ease:Expo.easeInOut},0.2)</script>
 <script src=jquery.drawsvg.js></script>
 <script>$(".AlphabetNav a").click(function(evt){evt.preventDefault();var $navItem=$(this),$contacts=$(".Contact");$contacts.show();if($navItem.hasClass("active")){$navItem.removeClass("active");}else{$(".AlphabetNav a").removeClass("active");$navItem.addClass("active");$.each($contacts,function(key,contact){var $contact=$(contact),$contactName=$contact.find(".Contact-names"),$nameArr=$contactName.text().split(" ");if($nameArr[0].split("")[0].toLowerCase()!==$navItem.text().split("")[0].toLowerCase()){$contact.hide();}});}});</script>
-<script>function getTimeRemaining(endtime){
+<!-- <script>function getTimeRemaining(endtime){
     var t=Date.parse(endtime)-Date.parse(new Date());
     var seconds=Math.floor((t/1000)%60);
     var minutes=Math.floor((t/1000/60)%60);
@@ -2820,7 +2820,7 @@ function initializeClock(id,endtime){
     }
     updateClock();
     var timeinterval=setInterval(updateClock,1000);}
-var deadline='April 3 2021 09:00:00 GMT+0530';initializeClock('clockdiv',deadline);</script>
+var deadline='April 3 2021 09:00:00 GMT+0530';initializeClock('clockdiv',deadline);</script> -->
 <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 </html>
